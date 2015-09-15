@@ -11,10 +11,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def echo():
-    stream = StringIO.StringIO()
-    indent = int(os.environ.get('PRINT_INDENT', 1))
-    pprint.pprint(request.environ, indent=indent, stream=stream)
-    return stream.getvalue()
+    return 'Teste aplicacao'
 
 
 def main():
