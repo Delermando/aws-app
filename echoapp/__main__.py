@@ -17,7 +17,7 @@ def echo():
 def main():
     app.run(
         host=os.environ.get('HTTP_HOST', '0.0.0.0'),
-        port=int(os.environ.get('HTTP_PORT', 80)),
+        port=int(os.environ.get('HTTP_PORT', 8000)),
         debug=int(os.environ.get('DEBUG', 0)),
     )
 
