@@ -11,8 +11,11 @@ app = Flask(__name__)
 
 @app.route("/")
 def echo():
-    return 'Teste delermando'
+    return 'Teste delermandos'
 
+@app.route("/teste")
+def echo():
+    return 'Rota teste'
 
 def main():
     app.run(
