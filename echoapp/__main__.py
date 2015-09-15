@@ -11,7 +11,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def echo():
-    return 'Teste aplicacao'
+    return 'Teste delermando'
 
 
 def main():
